@@ -8,6 +8,13 @@ const QuestionFour = document.getElementById('myPelementQuestionFour');
 const AnswerFour = document.getElementById('myPelementAnswerFour');
 const QuestionFive = document.getElementById('myPelementQuestionFive');
 const AnswerFive = document.getElementById('myPelementAnswerFive');
+const qone = document.getElementById('qone');
+const qtwo = document.getElementById('qtwo');
+const qthree = document.getElementById('qthree');
+const qfour = document.getElementById('qfour');
+const qfive = document.getElementById('qfive');
+const photo = document.getElementById('photo');
+
 
 //Buttons
 const jokeBtn = document.getElementById("search-jokebtn");
@@ -46,6 +53,12 @@ fetch('https://v2.jokeapi.dev/joke/Any?blacklistFlags=racist&type=twopart&amount
             AnswerFour.innerText = data.jokes[3].delivery
             QuestionFive.innerText = data.jokes[4].setup
             AnswerFive.innerText = data.jokes[4].delivery
+            qone.classList.remove('hide');
+            qtwo.classList.remove('hide');
+            qthree.classList.remove('hide');
+            qfour.classList.remove('hide');
+            qfive.classList.remove('hide');
+            photo.classList.remove('hide');
           }
           
           console.log(data);
