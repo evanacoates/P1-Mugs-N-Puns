@@ -89,9 +89,9 @@
             </div>
 
             <!-- SEARCH BREWERY-CONTAINER -->
-            <div class="brewery-container">
+            <div class="brewery-container" id="brewery-container">
                 <h2>Find a brewery near by:</h2>
-                <form>
+                <form onsubmit="searchBreweries(event)">
                     <!-- CONTAINER FOR ALL OF THE FORM CONTROLS TO SPACE ACCORDENLY -->
                     <div class="field is-horizontal is-grouped">
                         <!-- CLASS CONTROL IS USED TO COMBINE MULTIPLE CONTROLS IN THE FORM -->
@@ -103,6 +103,7 @@
                     <!-- SEARCH BREWERY FORM CLOSING TAG -->
                 </form>
                 <!-- BREWERY-CONTAINER CLOSING TAG -->
+                <div id="brewry-list"></div>
             </div>
             <!-- MAIN CLOSING TAG -->
         </div>

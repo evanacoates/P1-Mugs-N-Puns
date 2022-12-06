@@ -67,4 +67,26 @@ fetch('https://v2.jokeapi.dev/joke/Any?blacklistFlags=racist&type=twopart&amount
     });
 });
 
-    
+function format(phoneString) {
+  if (!phoneString || phoneString.length !== 10) return phoneString;
+
+  const areaCode = phoneString.substring(0, 3);
+  const second = phoneString.substring(3, 6);
+  const third = phoneString.substring(6, 10);
+  return `(${areaCode}) ${second}-${third}`;
+
+}
+function searchBreweries(event) {
+  event.preventDefault();
+  fetch('https://api.openbrewerydb.org/breweries?by_state=texas&per_page=20')
+  .then(response => response.json())
+  .then(json => {
+    console.log(json);
+
+    const breweryElements = json.filter(brewery => brewery.name && brewery.phone && brewery.website_url).map(brewery => `<h2>${brewery.name}</h2><p>${format(brewery.phone)}</p><p>${brewery.website_url}</p>`);
+    const breweryString = breweryElements.reduce( (acc, current) => acc + current, '')
+    document.getElementById('brewry-list').innerHTML = breweryString;
+
+  })
+  .catch(e => console.log(e));
+}
