@@ -9,7 +9,7 @@
 
 #joke-photo {
     display: flex;
-    width:100%;
+    width: 100%;
     height: auto;
 }
 
@@ -114,7 +114,8 @@ body {
     border: 4px;
     padding: 5px;
     margin: 10px;
-    width: 50%;
+    /* width: 50%; */
+    width: auto;
     overflow: hidden;
     background-color: rgb(246, 226, 0);
     box-shadow: 0 0 10px 2px;
@@ -137,7 +138,8 @@ body {
 
 }
 
-#name-plates {
+/* FABIANS CSS  */
+/* #name-plates {
     display: flex; 
     flex-wrap: wrap;
 }
@@ -146,48 +148,25 @@ body {
     font-size: 15px;
     margin-right:100px;
     text-decoration: none;
-}
+} */
 
-#fabien{
+#fabien {
     color: yellow;
     /* border-bottom: 2px solid gray; */
 }
 
-#fabien:hover{
-    color:gray;
+#fabien:hover {
+    color: gray;
     font-size: 20px;
 }
 
-
-
-
-
-
-@media screen and (min-width: 1024px) {
-    .main-content {
-        margin: 20px auto;
-        max-width: 100%;
-        padding: 50px;
-    }
-}
-
-
-@media screen and (min-width: 1024px) {
-    .about-us {
-        display: flex;
-        margin: 20px auto;
-        max-width: 75%;
-        padding: 0 20px;
-        flex-direction: column
-    }
-}
 
 /* BULMA CLASSES */
 .label {
     max-width: fit-content;
     margin-top: 4px;
     margin-left: 2px;
-        /* border-style: solid; */
+    /* border-style: solid; */
 
 }
 
@@ -212,10 +191,10 @@ body {
     margin: 10px;
     margin-bottom: 10px;
 }
- 
+
 
 .button {
-margin: 5px;
+    margin: 5px;
 
 
 }
@@ -226,3 +205,107 @@ margin: 5px;
 
 }
 
+/* HEADER MEDIA */
+
+@media screen and (max-width: 745px) {
+    .header {
+        height: 200px;
+        padding-top: 50px;
+        padding-right: 25px;
+        padding-left: 25px;
+        padding-bottom: 25px;
+    }
+}
+
+/* H1 FONT SIZE IS SET SMALLER */
+
+@media screen and (max-width: 507px) {
+    h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    p {
+
+        font-size: 20px;
+        padding: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+/* ABOUT US MEDIA */
+
+@media screen and (min-width: 1024px) {
+    .about-us {
+        display: flex;
+        margin: 20px auto;
+        max-width: 75%;
+        padding: 0 20px;
+        flex-direction: column;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 507px) {
+    .about-us p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 507px) {
+    .about-us {
+        padding: 0 15px;
+        margin: 15px;
+    }
+}
+
+/* NAV NAME PLATES  */
+
+@media screen and (max-width: 850px) {
+    #name-plates {
+        flex-direction: row;
+    }
+}
+
+#name-plates {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    max-width: 100%;
+    text-align: center;
+    justify-content: center
+}
+
+.name-plates {
+    font-size: 15px;
+    flex-wrap: wrap;
+}
+
+
+/* MAIN CONTENT MEDIA */
+@media screen and (max-width: 507px) {
+    .main-content {
+        padding: 0px;
+        margin: 2px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .main-content {
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .main-content {
+        margin: 20px auto;
+        max-width: 100%;
+        padding: 50px;
+
+    }
+}
