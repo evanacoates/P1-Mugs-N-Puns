@@ -1,11 +1,11 @@
 # Mugs-N-Puns by Group 7
 
 ## Description
-    Mugs-N-Puns is a website designed to create jokes and find breweries. We have a list of 5 jokes that generate everytime the search button is clicked.
+Mugs-N-Puns is a website designed to create jokes and find breweries. We have a list of 5 jokes that generate everytime the search button is clicked.
 
-    We also have a list of breweries within Texas that are generated when a search button is clicked.
+ We also have a list of breweries within Texas that are generated when a search button is clicked.
      
-    To achieve this, we used two different APIs. One API gave us a number of options for different kinds of jokes. THe other API generates the name, number, and website of different breweries.
+To achieve this, we used two different APIs. One API gave us a number of options for different kinds of jokes. THe other API generates the name, number, and website of different breweries.
 
 ## Wireframe
     We considered 4 different wireframes which are:
