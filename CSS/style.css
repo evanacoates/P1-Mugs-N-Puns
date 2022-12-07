@@ -93,7 +93,10 @@ body {
 .about-us {
     padding: 50px;
     margin: 10px;
-    background-color: rgb(246, 226, 0);
+    /* background-color: rgb(246, 226, 0); */
+    background-color: rgb(245,199,26);
+
+
     box-shadow: 0 0 10px 2px;
 
 
@@ -117,7 +120,8 @@ body {
     /* width: 50%; */
     width: auto;
     overflow: hidden;
-    background-color: rgb(246, 226, 0);
+    background-color: rgb(245,199,26);
+    /* background-color: rgb(246, 226, 0); */
     box-shadow: 0 0 10px 2px;
     /* max-height: 1400px; */
 
@@ -133,7 +137,9 @@ body {
     /* width: 50%;  */
     width: auto;
     overflow: hidden;
-    background-color: rgb(246, 226, 0);
+    background-color: rgb(245,199,26);
+
+    /* background-color: rgb(246, 226, 0); */
     box-shadow: 0 0 10px 2px;
 
 }
@@ -151,7 +157,10 @@ body {
 } */
 
 #fabien {
-    color: yellow;
+    /* color: yellow; */
+    /* background-color: rgb(245,199,26); */
+color:rgb(245,199,26);
+
     /* border-bottom: 2px solid gray; */
 }
 
