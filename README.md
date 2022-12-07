@@ -7,7 +7,10 @@
 <img src="./Images/wireframe.png" alt="Image of wireframe 1">
 <img src="./Images/wireframe-1.png" alt="Image of wireframe 2">
 <img src="./Images/wireframe-2.png" alt="Image of wireframe 3">
-<img src="./Images/wireframe-3.jpg" alt="Image of wireframe 4">
+<img src="./Images/wireframe-3.JPG" alt="Image of wireframe 4">
+
+<!-- hello -->
+
     But we ended up up choosing
     <img src="./Images/wireframe.png" alt="Image of wireframe 1">
 
