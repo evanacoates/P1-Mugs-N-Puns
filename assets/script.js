@@ -16,6 +16,7 @@ const qfive = document.getElementById('qfive');
 const photo = document.getElementById('photo');
 
 
+
 //Buttons
 const jokeBtn = document.getElementById("search-jokebtn");
 
@@ -53,11 +54,11 @@ fetch('https://v2.jokeapi.dev/joke/Any?blacklistFlags=racist&type=twopart&amount
             AnswerFour.innerText = data.jokes[3].delivery
             QuestionFive.innerText = data.jokes[4].setup
             AnswerFive.innerText = data.jokes[4].delivery
-            qone.classList.remove('hide');
-            qtwo.classList.remove('hide');
-            qthree.classList.remove('hide');
-            qfour.classList.remove('hide');
-            qfive.classList.remove('hide');
+            // qone.classList.remove('hide');
+            // qtwo.classList.remove('hide');
+            // qthree.classList.remove('hide');
+            // qfour.classList.remove('hide');
+            // qfive.classList.remove('hide');
             photo.classList.remove('hide');
           }
           
@@ -93,37 +94,37 @@ function searchBreweries(event) {
 }
 function saveMyQuestions(){
 
-  localStorage.setItem('jokeH1', qone.innerText)
+  // localStorage.setItem('jokeH1', qone.innerText)
   localStorage.setItem('Question One', QuestionOne.innerText)
   localStorage.setItem('Answer One', AnswerOne.innerText)
-  localStorage.setItem('jokeH2', qtwo.innerText )
+  // localStorage.setItem('jokeH2', qtwo.innerText )
   localStorage.setItem('Question Two', QuestionTwo.innerText)
   localStorage.setItem('Answer Two', AnswerTwo.innerText)
-  localStorage.setItem("jokeH3", qthree.innerText)
+  // localStorage.setItem("jokeH3", qthree.innerText)
   localStorage.setItem('Question Three', QuestionThree.innerText)
   localStorage.setItem('Answer Three', AnswerThree.innerText)
-  localStorage.setItem('jokeH4', qfour.innerText)
+  // localStorage.setItem('jokeH4', qfour.innerText)
   localStorage.setItem('Question Four', QuestionFour.innerText)
   localStorage.setItem('Answer Four', AnswerFour.innerText)
-  localStorage.setItem('jokeH5', qfive.innerText)
+  // localStorage.setItem('jokeH5', qfive.innerText)
   localStorage.setItem('Question Five', QuestionFive.innerText)
   localStorage.setItem('Answer Five', AnswerFive.innerText)
 
 }
 
-qone.innerHTML = localStorage.getItem('jokeH1')
+// qone.innerHTML = localStorage.getItem('jokeH1')
 QuestionOne.innerHTML = localStorage.getItem('Question One')
 AnswerOne.innerHTML = localStorage.getItem('Answer One')
-qtwo.innerHTML = localStorage.getItem('jokeH2')
+// qtwo.innerHTML = localStorage.getItem('jokeH2')
 QuestionTwo.innerHTML = localStorage.getItem('Question Two')
 AnswerTwo.innerHTML = localStorage.getItem('Answer Two')
-qthree.innerHTML = localStorage.getItem('jokeH3')
+// qthree.innerHTML = localStorage.getItem('jokeH3')
 QuestionThree.innerHTML = localStorage.getItem('Question Three')
 AnswerThree.innerHTML = localStorage.getItem('Answer Three')
-qfour.innerHTML = localStorage.getItem('jokeH4')
+// qfour.innerHTML = localStorage.getItem('jokeH4')
 QuestionFour.innerHTML = localStorage.getItem('Question Four')
 AnswerFour.innerHTML = localStorage.getItem('Answer Four')
-qfive.innerHTML = localStorage.getItem('jokeH5')
+// qfive.innerHTML = localStorage.getItem('jokeH5')
 QuestionFive.innerHTML = localStorage.getItem('Question Five')
 AnswerFive.innerHTML = localStorage.getItem('Answer Five')
 
