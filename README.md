@@ -6,6 +6,7 @@ Mugs-N-Puns is a website designed to create jokes and find breweries. We have a 
 We also have a list of breweries within Texas that are generated when a search button is clicked.
      
 To achieve this, we used two different APIs. One API gave us a number of options for different kinds of jokes. THe other API generates the name, number, and website of different breweries.
+<hr>
 
 ## **Table of Contents**
 - [**Installation**](#installation)
@@ -14,6 +15,8 @@ To achieve this, we used two different APIs. One API gave us a number of options
 - [**Technologies**](#technologies)
 - [**Credits**](#credits)
 - [**license**](#license)
+
+<hr>
 
 ## **Installation**
 No installation required. You can visit our fully functional website here: https://fabien1313.github.io/mugs-n-puns/ 
@@ -29,6 +32,8 @@ No installation required. You can visit our fully functional website here: https
     But we ended up up choosing
 <img src="./Images/wireframe.png" width="500" alt="Image of wireframe 1">
 
+<hr>
+
 ## **Website**
 
     Our final website looks like this.
@@ -43,7 +48,7 @@ After user input:
 <img src="./Images/web2.png" width="800" alt="Image of website">
 <img src="./Images/web3.png" width="800" alt="Image of website">
 
-
+<hr>
 
 
 ## **Technologies**
@@ -65,14 +70,21 @@ https://www.openbrewerydb.org/documentation#single-brewery
 
 <img src="./Images/brewapi.png" width="800" alt="Brewery API">
 
+<hr>
+
 ## **Credits**
+
     Our collaborators include: 
-        Fabien Moreno: https://github.com/fabien1313
-        Christian Mendez: https://github.com/christian1512-FE
-        Evan Coates: https://github.com/evanacoates
-        Deborah Adane: https://github.com/dadane1
 
+***Fabien Moreno:*** https://github.com/fabien1313
 
+***Christian Mendez:*** https://github.com/christian1512-FE
+
+***Evan Coates:*** https://github.com/evanacoates
+
+***Deborah Adane:*** https://github.com/dadane1
+
+<hr>
 
 ## **License**
 
