@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- GOOGLE FONTS -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=Bebas+Neue&family=Prompt:wght@100&display=swap"
+        rel="stylesheet">
+    <!-- BULMA CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!-- CSS STYLESHEET -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>MugsNPuns</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <img src="./Images/ba1ecdec21c059789820951b818c2330.png" class="website-title" alt="website-title MugsNPuns">
+        <img src="./Images/aa93c8fd99f4cbfc49f19a09011f4ec2.png" class="slogans" alt="slogan good laugh">
+        <img src="./Images/4002cbcc360a76c1b8b76180e0cb4b63.png" class="slogans2" alt="slogan search brewery">
+        <!-- <a href="https://github.com/fabien1313" target="_blank"> -->
+        <!-- <ul id="name-plates">
+            <li class="name-plates"><a href="https://github.com/fabien1313" target="_blank">
+                <div><span id="fabien" class="fab fa-github column links white"> Fabien</span></div>
+            </a></li>
+            <li class="name-plates"><a href="https://github.com/dadane1" target="_blank">
+                <div><span id="fabien" class="fab fa-github column links white"> Deborah</span></div>
+            </a></li>
+            <li class="name-plates"><a href="https://github.com/evanacoates" target="_blank">
+                <div><span id="fabien" class="fab fa-github column links white"> Evan</span></div>
+            </a></li>
+            <li class="name-plates"><a href="https://github.com/christian1512-FE" target="_blank">
+                <div><span id="fabien" class="fab fa-github column links white"> Christian</span></div>
+            </a></li>
+        </ul> -->
+    </header>
+
+    <nav class="navigation">
+        <!-- <a href="https://github.com/fabien1313" target="_blank"> -->
+            <ul id="name-plates">
+                <li class="name-plates"><a href="https://github.com/fabien1313" target="_blank">
+                    <div><span id="fabien" class="fab fa-github column links white"> Fabien</span></div>
+                </a></li>
+                <li class="name-plates"><a href="https://github.com/dadane1" target="_blank">
+                    <div><span id="fabien" class="fab fa-github column links white"> Deborah</span></div>
+                </a></li>
+                <li class="name-plates"><a href="https://github.com/evanacoates" target="_blank">
+                    <div><span id="fabien" class="fab fa-github column links white"> Evan</span></div>
+                </a></li>
+                <li class="name-plates"><a href="https://github.com/christian1512-FE" target="_blank">
+                    <div><span id="fabien" class="fab fa-github column links white"> Christian</span></div>
+                </a></li>
+            </ul>
+    </nav>
+
+    <main>
+        <!-- ABOUT-US -->
+        <section class="about-us">
+            <h1>About Us:</h1>
+            <p>Our website is designed to help find a brewery in Texas. We have numerous options and we hope to help find the right fit for you. In your search brewery search you will be equipped with everything you need such as brewery name, website, and phone number. While browsing, you can also have a laugh by reading through our fun and witty selection of jokes. Enjoy!</p>
+        </section>
+
+        <div class="main-content">
+            <!-- JOKE CONTAINER -->
+            <div class="joke-container" id="joke-container">
+                <h1>We have programming, dark, puns, spooky, and Christmas jokes!</h1>
+                <!-- <form> -->
+                    <!-- CONTAINER FOR ALL OF THE FORM CONTROLS TO SPACE ACCORDENLY -->
+                    <div class="field has-addons is-horizontal">
+                        <!-- CLASS CONTROL IS USED TO COMBINE MULTIPLE CONTROLS IN THE FORM -->
+                        <div class="control" id="select-category">
+
+                            <label class="hide label">Select Category:</label>
+                            <label class="hide radio"><input type="radio" id="any">Any</label>
+                            <label class="hide radio"><input type="radio" id="custom">Custom</label>
+                            <label class="hide checkbox"><input type="checkbox" id="programing">Programing</label>
+                            <label class="hide checkbox"><input type="checkbox" id="misc">Misk</label>
+                            <label class="hide checkbox"><input type="checkbox" id="dark">Dark</label>
+                            <label class="hide checkbox"><input type="checkbox" id="pun">Pun</label>
+
+                            <!-- <label class="hide label">Language:</label>
+                            <div class="hide select">
+                                <select class="hide">
+                                    <option class="hide">English</option>
+                                    <option class="hide">Spanish</option>
+                                </select>
+                            </div> -->
+                        </div>
+                    </div>
+                    <!-- SEARCH JOKE BUTTON -->
+
+                    <div class="control" id="search-joke">
+                        <label class="label">Generate Jokes:</label>
+                        <input class="hide input is-normal" type="text" placeholder="Search Joke">
+                        <button class="button is-dark" id="search-jokebtn">Search</button>
+                        <div id="joke-photo" class="hide">
+                        <img id="photo" class="hide" src="./Images/beer.jpg">
+                        </div>
+                        <h2 id="qone">Joke One:</h2>
+                        <p id="myPelementQuestionOne"></p>
+                        <p id="myPelementAnswerOne"></p>
+                        <h2 id="qtwo">Joke Two:</h2>
+                        <p id="myPelementQuestionTwo"></p>
+                        <p id="myPelementAnswerTwo"></p>
+                        <h2 id="qthree">Joke Three:</h2>
+                        <p id="myPelementQuestionThree"></p>
+                        <p id="myPelementAnswerThree"></p>
+                        <h2 id="qfour">Joke Four:</h2>
+                        <p id="myPelementQuestionFour"></p>
+                        <p id="myPelementAnswerFour"></p>
+                        <h2 id="qfive">Joke Five:</h2>
+                        <p id="myPelementQuestionFive"></p>
+                        <p id="myPelementAnswerFive"></p>
+                    </div>
+                    <!-- SEARCH JOKE FORM CLOSING TAG -->
+                <!-- </form> -->
+                <!-- JOKE CONTAINER CLOSING DIV -->
+            </div>
+
+            <!-- SEARCH BREWERY-CONTAINER -->
+            <div class="brewery-container" id="brewery-container">
+                <h2>Find a brewery near by:</h2>
+                <form onsubmit="searchBreweries(event)">
+                    <!-- CONTAINER FOR ALL OF THE FORM CONTROLS TO SPACE ACCORDENLY -->
+                    <div class="field is-horizontal is-grouped">
+                        <!-- CLASS CONTROL IS USED TO COMBINE MULTIPLE CONTROLS IN THE FORM -->
+                        <div class="control is-grouped" id="search-brewery">
+                            <input class="input is-normal hide" type="text" placeholder="Search Brewery">
+                            <button class="button is-dark" id="search-brewerybtn">Search</button>
+                        </div>
+                    </div>
+                    <!-- SEARCH BREWERY FORM CLOSING TAG -->
+                </form>
+                <!-- BREWERY-CONTAINER CLOSING TAG -->
+                <div id="brewry-list"></div>
+            </div>
+            <!-- MAIN CLOSING TAG -->
+        </div>
+    </main>
+    <!-- JAVASCRIPT FILE -->
+    <script src="./assets/script.js"></script>
+
+</body>
+
+</html>

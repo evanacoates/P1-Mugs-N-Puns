@@ -1,0 +1,320 @@
+:root {
+    font-size: 25px;
+}
+
+
+.hide {
+    display: none;
+}
+
+#joke-photo {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+
+}
+
+/* FONT COLOR, & FONT FAMILY FOR ALL OVERWRITING BULMAS FONT */
+body {
+    font-family: 'Bebas Neue', cursive;
+    color: black;
+    background-color: rgb(177, 177, 177);
+}
+
+/* FONT SIZE FOR H1 */
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    border-color: rgb(0, 0, 0);
+    /* border-style: solid; */
+    max-width: fit-content;
+    font-size: 35px;
+    padding-left: 2px;
+    padding-right: 3px;
+    /* background-color: rgb(246, 246, 246); */
+}
+
+/* HTML & BODY */
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    background-color: rgb(177, 177, 177);
+
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 0 10px 2px;
+
+}
+
+/* MAIN IMAGE WITH TITLE NAME */
+.website-title {
+    display: flex;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+/* SLOGAN IMAGE 1 */
+.slogans {
+    max-width: 75%;
+    max-height: 75%;
+}
+
+/* SLOGAN IMAGE 2 */
+.slogans2 {
+    max-width: 50%;
+    max-height: 50%;
+    margin-top: 10px;
+}
+
+/* ABOUT US */
+.about-us {
+    padding: 50px;
+    margin: 10px;
+    /* background-color: rgb(246, 226, 0); */
+    background-color: rgb(245,199,26);
+
+
+    box-shadow: 0 0 10px 2px;
+
+
+}
+
+/* MAIN CONTAINER INCLUDES BOTH JOKE & BREWERY*/
+.main-content {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    margin: 20px;
+
+}
+
+
+/* CONTAINER FOR JOKE */
+.joke-container {
+    border: 4px;
+    padding: 5px;
+    margin: 10px;
+    /* width: 50%; */
+    width: auto;
+    overflow: hidden;
+    background-color: rgb(245,199,26);
+    /* background-color: rgb(246, 226, 0); */
+    box-shadow: 0 0 10px 2px;
+    /* max-height: 1400px; */
+
+
+}
+
+
+/* CONTAINER FOR BREWERY */
+.brewery-container {
+    border: 4px;
+    padding: 5px;
+    margin: 10px;
+    /* width: 50%;  */
+    width: auto;
+    overflow: hidden;
+    background-color: rgb(245,199,26);
+
+    /* background-color: rgb(246, 226, 0); */
+    box-shadow: 0 0 10px 2px;
+
+}
+
+/* FABIANS CSS  */
+/* #name-plates {
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+.name-plates {
+    font-size: 15px;
+    margin-right:100px;
+    text-decoration: none;
+} */
+
+#fabien {
+    /* color: yellow; */
+    /* background-color: rgb(245,199,26); */
+color:rgb(245,199,26);
+
+    /* border-bottom: 2px solid gray; */
+}
+
+#fabien:hover {
+    color: gray;
+    font-size: 20px;
+}
+
+
+/* BULMA CLASSES */
+.label {
+    max-width: fit-content;
+    margin-top: 4px;
+    margin-left: 2px;
+    /* border-style: solid; */
+
+}
+
+.control {
+    /* border-style: solid; */
+    margin-top: 3px;
+}
+
+
+/* INPUT CLASS */
+.input {
+    max-width: 50%;
+    margin: 10px;
+}
+
+/* SELECT LANGUAGE */
+.select {
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    max-height: 15%;
+    margin: 10px;
+    margin-bottom: 10px;
+}
+
+
+.button {
+    margin: 5px;
+
+
+}
+
+.checkbox {
+    padding: 2px;
+    margin: 5px;
+
+}
+
+/* HEADER MEDIA */
+
+@media screen and (max-width: 745px) {
+    .header {
+        height: 200px;
+        padding-top: 50px;
+        padding-right: 25px;
+        padding-left: 25px;
+        padding-bottom: 25px;
+    }
+}
+
+/* H1 FONT SIZE IS SET SMALLER */
+
+@media screen and (max-width: 507px) {
+    h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    p {
+
+        font-size: 20px;
+        padding: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+/* ABOUT US MEDIA */
+
+@media screen and (min-width: 1024px) {
+    .about-us {
+        display: flex;
+        margin: 20px auto;
+        max-width: 75%;
+        padding: 0 20px;
+        flex-direction: column;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 507px) {
+    .about-us p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 507px) {
+    .about-us {
+        padding: 0 15px;
+        margin: 15px;
+    }
+}
+
+/* NAV NAME PLATES  */
+
+@media screen and (max-width: 850px) {
+    #name-plates {
+        flex-direction: row;
+    }
+}
+
+#name-plates {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    max-width: 100%;
+    text-align: center;
+    justify-content: center
+}
+
+.name-plates {
+    font-size: 15px;
+    flex-wrap: wrap;
+}
+
+
+/* MAIN CONTENT MEDIA */
+@media screen and (max-width: 507px) {
+    .main-content {
+        padding: 0px;
+        margin: 2px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .main-content {
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .main-content {
+        margin: 20px auto;
+        max-width: 100%;
+        padding: 50px;
+
+    }
+}
