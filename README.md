@@ -16,7 +16,7 @@ To achieve this, we used two different APIs. One API gave us a number of options
 - [**license**](#license)
 
 ## **Installation**
-No installation required. You can visit our fully functional website here: 
+No installation required. You can visit our fully functional website here: https://fabien1313.github.io/mugs-n-puns/ 
 
 
 ## **Wireframe**
